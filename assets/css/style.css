@@ -1,0 +1,48 @@
+.container_seccion_principal {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  align-items: center;
+}
+
+#container_padre {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  margin: 0%;
+  height: 50%;
+}
+
+#input_usuario {
+  width: 12em;
+}
+
+#encabezado {
+  text-align: center;
+}
+
+#propiedad_divisor {
+  background-color: rgb(0, 161, 183);
+}
+
+.btn-info {
+  width: 12em;
+}
+
+.form-label {
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+
+.container_resultado {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

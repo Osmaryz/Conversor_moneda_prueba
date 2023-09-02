@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container_seccion_principal">
+      <div>
+        <h1 id="encabezado">Conversor de monedas Nacional</h1>
+        <hr id="propiedad_divisor" />
+      </div>
+      <div id="container_padre">
+        <div>
+          <label for="exampleFormControlInput1" class="form-label"
+            >Pesos CPL</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="input_usuario"
+            placeholder="Ingresa monto"
+          />
+        </div>
+
+        <select
+          class="form-select form-select-lg mb-3"
+          aria-label=".form-select-lg example"
+          id="monedas"
+        >
+          <option selected>Open this select menu</option>
+          <option value="1">uf</option>
+          <option value="2">utm</option>
+        </select>
+        <button type="button" class="btn btn-info" id="boton_buscar">
+          Buscar
+        </button>
+        <div class="container_resultado">
+          <h4 id="resultado_conversion"></h4>
+        </div>
+      </div>
+      <h1>Histórico Moneda</h1>
+      <div class="grafica">
+        <canvas id="myChart" width="400" height="300"></canvas>
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+  </body>
+</html>
